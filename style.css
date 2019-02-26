@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 body{
 }
@@ -36,6 +37,7 @@ img{
     text-align: center;
     position: fixed;
     z-index: 6;
+    
 }
 
 .about-git{
@@ -45,6 +47,7 @@ img{
     height: 100vh;
     background-attachment: fixed;
 }
+
 .logo{
     width: 18%;
     height: auto;
@@ -52,12 +55,12 @@ img{
 }
 .underline{
     background-color: #F05133;
-    width: 50%;
+    width: 100%;
     height: 2px;
     margin: 0 auto;
 }
 .git-logos{
-    width: 120px;
+    width: 150px;
     height: auto;
     margin: 0 50px 0 50px;
 }
@@ -79,6 +82,7 @@ a.navigation{
     margin: 0px 30px 0px 30px;
     text-decoration: none;
     color: #F05133;
+    
 
 }
 
@@ -90,7 +94,7 @@ div.heading>h2{
     font-size: 60px;
 }
 div.heading{
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.714);
     height: 200px;
     padding-top: 60px;
 }
@@ -114,6 +118,11 @@ div.commands>h2{
     background-image: url(images/branches5.jpeg);
     height: 100vh;
     background-attachment: fixed;
+}
+
+#commands{
+    scroll-behavior: smooth;
+
 }
 
 @media(max-width:800px){
