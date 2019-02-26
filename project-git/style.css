@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+}
+
+.main-content{
+    width: 100%;
+    text-align: left;
+}
+
+h1,p{
+    text-align: center;
+    margin: 0 30px 0 30px;
+}
+p{
+    font-size: 24px;
+}
+
+.margin-top{
+    margin-top: 60px;
+
+}
+img{
+    width: 50%;
+    z-index: 6;
+}
+.menu{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    width: 100%;
+    transition: all 1s ease 0s;
+    display:inline-block;  
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-git{
+    z-index: -1;
+    background-size: cover;
+    background-image: url(images/gitbc.jpeg);
+    height: 100vh;
+    background-attachment: fixed;
+}
+.logo{
+    width: 18%;
+    height: auto;
+    padding: 10px;
+}
+.underline{
+    background-color: #F05133;
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+}
+.git-logos{
+    width: 120px;
+    height: auto;
+    margin: 0 50px 0 50px;
+}
+.under-logo{
+    text-align: center;
+    margin: 40px;
+}
+
+
+ul{
+
+}
+a.navigation{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 30px 0px 30px;
+    text-decoration: none;
+    color: #F05133;
+
+}
+
+div.commands-heading>h2{
+    background-color: rgb(0, 0, 0);
+    color: #F05133;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+div.commands>h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin: 14px 0 14px;
+}
+
+.commands{
+    z-index: -1;
+    background-size: cover;
+    background-image: url(images/branches1.jpeg);
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+@media(max-width:800px){
+    a{
+    }
+}
