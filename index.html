@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    
+
     
 
 
@@ -46,7 +49,12 @@
               <a href="#commands" class="navigation">Kommandon</a>
               <a href="#work-with-git" class="navigation">Arbeta med git</a>
               <div class="underline"></div>
-        </div>
+              
+            </div>
+                <div class="searchField">
+                    <input id="inputSearch" type="text" placeholder="Search.." onkeyup="searchFunction()">
+                    <button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
+                </div>
         <div class="canvas">
 
         <h1 class="margin-top"> Om Git</h1>
@@ -54,11 +62,27 @@
             Git är ett gratis versionshanteringsprogram som skapades 2005 för att hantera källkoden till Linuxkärnan. Git är utformat för att hantera allt ifrån små till stora projekt.
         </p>
       </div>
+      <div class="canvas">
+        <h1 class="margin-top"> Kom igång med git </h1>
+        <p>if you don't already have git installed you can start by installing it by pressing the orange git-symbol below</p>
+        <!----<p>
+          Om du inte redan har git installerat så kan du börja med att installera git genom att klicka på den orangea git-symbolen nedan.
+        </p> --->
+
+
+        <h1 class="margin-top"> Add & Commit </h1>
+        <p>
+          You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen further down.
+        </p>
+        <p>
+
+        </p>
+      </div>
         <div class="under-logo">
-          <a href="https://github.com/" target="_blank">
+          <a href="https://git-scm.com/" target="_blank">
             <img src="images/git (kopia).png" alt="" class="git-logos">
           </a>
-          <a href="https://git-scm.com/" target="_blank">
+          <a href="https://github.com/" target="_blank">
             <img src="images/github-logo.png" alt="" class="git-logos">
           </a>
         </div>
@@ -73,47 +97,71 @@
         <div class="command">
 
           <div class="canvas">
-              <p class="code-text">Git commit -m "bug-fix"</p>
+              <a href="#git-commit" class="code-text" id="git-commit">Git commit -m "bug-fix"</a>
+              <p class="explanation">Commit changes with a message within the quotes</p>
             </div>
+
             <div class="canvas">
-              <p class="code-text">Git status</p>
+              <p class="code-text">Git init</p>
+              <p class="explanation">Initialize a local Git repository</p>
+            </div>
+            
+            <div class="canvas">
+              <a href="index.html#status" class="code-text" id="status">Git status</a>
               <p class="explanation">checks to se the status</p>
             </div>
             <div class="canvas">
-              <p class="code-text">Git pull</p>
+              <a href="index.html#pull" class="code-text" id="pull">Git pull</a>
               <p class="explanation">Update your local repository to the latest commit, for exampel from Github</p>
             </div>
             <div class="canvas">
-              <p class="code-text">Git push</p>
+              <a href="index.html#push" class="code-text" id="push">Git push</a>
               <p class="explanation"> Push the changes to remote repository, for exampel to Github.</p>
             </div>
             <div class="canvas">
-              <p class="code-text">Git branch</p>
+              <a href="index.html#branch" class="code-text" id="branch">Git branch</a>
+              <p class="explanation">List all the branches and marks the current branch</p>
             </div>
             <div class="canvas">
-              <p class="code-text">Git add .</p>
+              <a href="index.html#add" class="code-text" id="add" href>Git add .</a>
+              <p class="explanation">Adding all the files to the staging area</p>
+            </div>
+            <div class="canvas">
+              <a href="index.html#remove" class="code-text" id="remove">git rm -r [file-name.txt]</a>
+              <p class="explanation">Remove a file or a folder with the specific name</p>
             </div>
           
 
         </div>
         <div class="command">
           <div class="canvas">
-            <p class="code-text">git push origin [branch name]	</p>
+            <a href="index.html#origin" class="code-text" id="origin">git push origin [branch name]	</a>
+            <p class="explanation">Push a branch to your remote repository</p>
           </div>
           <div class="canvas">
             <p class="code-text">git push -u origin [branch name]</p>
+            <p class="explanation">Push changes to remote repository and remember the branch</p>
           </div>
           <div class="canvas">
             <p class="code-text">git log</p>
-          </div>
-          <div class="canvas">
-            <p class="code-text">git checkout [branch name]</p>
+            <p class="explanation">View the changes</p>
           </div>
           <div class="canvas">
             <p class="code-text">git checkout -b [branch name]	</p>
+            <p class="explanation">Create a new branch and switch to it</p>
+          </div>
+          <div class="canvas">
+            <a href="index.html#checkout" class="code-text" id="checkout">git checkout [branch name]</a>
+            <p class="explanation">Switch to a branch by using the branchnamne</p>
           </div>
           <div class="canvas">
             <p class="code-text">git add -A</p>
+            <p class="explanation">Adding all new and changed files to the staging area</p>
+          </div>
+          <div class="canvas">
+            <p class="code-text">git add [file-name.txt]	</p>
+            <p class="explanation">Adding a specific file to the staging area </p>
+              </p>
           </div>
 
 
@@ -139,19 +187,14 @@
                 adipisicing elit.
               </p>
               <h1 class="margin-top">Branches And Merge</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos nostrum perferendis minus labore, sapiente officiis inventore aperiam totam omnis illum quam, veritatis atque laudantium voluptates fuga possimus dolores voluptate?</p>
+              <p>För att underlätta arbetet</p>
+              <h1 class="margin-top">Branches</h1>
+              <h1 class="margin-top">Merge</h1>
+
       </div>
       </div>
 
     </div>
-    <script>
-    const searchItems = ['work-with-git']
-    
-    let value = 'hej';
-    value = 'korv'
-    let nyArray = searchItems.filter((searchWord) => {
-      return searchWord.includes(value);
-    });
-    </script>
+    <script src="searchbar.js"></script>
   </body>
 </html>
