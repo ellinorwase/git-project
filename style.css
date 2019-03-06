@@ -4,8 +4,6 @@
     scroll-behavior: smooth;
     color: black;
 }
-body{
-}
 
 .searchField{
     grid-column-start: 5;
@@ -100,12 +98,12 @@ a.navigation{
 }
 
 div.heading>h2{
-    color: rgba(0, 0, 0, 0.838)0, 0);
     width: 100%;
     height: 100px;
     text-align: center;
     font-size: 60px;
 }
+
 div.heading{
     background-color: rgba(41, 41, 41, 0.714);
     height: 200px;
@@ -127,19 +125,32 @@ div.commands>h2{
 
 .command{
     z-index: 0;
-    /*background-color: rgba(255, 255, 255, 0.79);*/
     margin: auto;
     width: 100%;
-    display: inline;
     border-radius: 4px;
     color: #F05133;
 }
 
+input{
+    border-radius: 10px;
+    height: 30px;
+}
+button{
+    border-radius: 10px;
+    height: 30px;
+}
+.searchbutton>a{
+    text-decoration: none;
+}
+
 .code-text{
     font-family: 'PT Mono', monospace;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     margin: 14px 0 14px 0;
+    font-family: 'VT323', monospace;
+    font-family: 'Press Start 2P', cursive;
+
 }
 
 h2{
@@ -148,7 +159,6 @@ h2{
 
 .explanation{
     z-index: 0;
-    /*background-color: rgba(255, 255, 255, 0.79);*/
     margin: auto;
     width: 100%;
     height: auto;
@@ -167,12 +177,13 @@ h2{
     display: table;
 }
 
+
 .canvas{
     z-index: 0;
     background-color: rgba(255, 255, 255, 0.79);
     margin: auto;
     padding: 10px;
-    width: 70%;
+    width: 86%;
     height: auto;
     border-radius: 4px;
     margin-top: 50px;
@@ -194,6 +205,11 @@ h2{
 #commands{
     scroll-behavior: smooth;
 
+}
+
+.branch-logo{
+    width: 30px;
+    height: auto;
 }
 
 
@@ -241,7 +257,7 @@ h2{
         z-index: -1;
         background-size: cover;
         background-image: url(images/branches5.jpeg);
-        height: auto;
+        height: 100%;
         background-attachment: fixed;
     }
 
