@@ -144,12 +144,14 @@ button{
 }
 
 .code-text{
-    font-family: 'PT Mono', monospace;
-    font-size: 18px;
+    font-size: 35px;
     text-align: center;
     margin: 14px 0 14px 0;
-    font-family: 'VT323', monospace;
     font-family: 'Press Start 2P', cursive;
+    font-family: 'PT Mono', monospace;
+    font-family: 'VT323', monospace;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+
 
 }
 
