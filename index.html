@@ -8,39 +8,18 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-
-
-
-    <!--
-      <script type="text/javascript" src="js/search.js"></script>
-      <script type="text/javascript" src="js/jquery.js"></script>
-    -->
   </head>
   <body>
-    
-    <!---
-    <ul id="list">
-      <li class="element"></li>
-    </ul>
-    Search:
-    <input type="text" id="seach" placeholder="Search.. " />
-    <br>
-    <div id="searchresult">
-
-    </div>
-    <script type="text/javascript">
-    
-    
-    </script> 
-    -->
-
-
+ 
     <div class="main-content">
       <div class="about-git" id="about-git">
 
@@ -58,14 +37,17 @@
                 </div>
         <div class="canvas">
 
-        <h1 class="margin-top"> Om Git</h1>
-        <p>
-            Git är ett gratis versionshanteringsprogram som skapades 2005 för att hantera källkoden till Linuxkärnan. Git är utformat för att hantera allt ifrån små till stora projekt.
-        </p>
+        <h1> About Git</h1>
+        <p class="margin-top2"> Git is a distributed version control tool, designed to handle everything from small to large projects.
+            Git is the system we use to track changes. It's a filesystem that keep a lookout for changes in the files, including who made each change and why they made it. <br>
+            Git help us: <br>
+            1. Track document versions. <br> 2. Keeps an history of document changes. <br> 3. Foster team work.
+          </p>
 
+        <h1 class="margin-top"> Github</h1>
         
-        
-        <p>While git is about keeping track of changes in code, GitHub.com is a cloud service the helps teams in communication, collaboration and projectmanagement.</p>
+        <p class="margin-top2">While git is about keeping track of changes in code, GitHub.com is a cloud service that helps teams in communication, collaboration and project management. <br> Github repositories can be private or public. Only the owner and collaborators can view or contribute to a private repository while public repositories are visible to everyone. With that said, you should be careful of what you publish on your public repository.
+        </p>
         <!--
           <p>Everyday workflow</p>
           <ol>
@@ -83,45 +65,25 @@
             <li>We download the file with new name.</li>
             repeat
           </ol>
-          <p> store versions. restore versions. Collabriation and collective code ownershit. Tracking history. Security</p>
-          
-          git help us 1. track document versions 2. keeps an history of document changes 3. foster team work
         -->
       </div>
       <div class="canvas">
-        <h1 class="margin-top"> Kom igång med git </h1>
-        <p>if you don't already have git installed you can start by installing it by pressing the orange git-symbol below</p>
-        <p>When you have Git installed you can open the terminal and check if it's there by using the command: <p class="code-text">"git --version"</p></p>
-        <!----<p>
-          Om du inte redan har git installerat så kan du börja med att installera git genom att klicka på den orangea git-symbolen nedan.
-          
-          git: a distributed version control tool. is the system we use to track changes. who made the change?
-          <p>git is a distributed version control toolUsed for tracking changes to filesIt's like a filesystem on steroids:○a log of changes to the files○including who made each change○and why they made it</p>
-          
-          
-          github: is a cloud service that help teams communicate, collaboration and project management.
+        <h1> Get started with git</h1>
+        <p class="margin-top2">if you don't already have git installed you can start by installing it by pressing the orange git-symbol below. When you have Git installed you can open the terminal and check if it's there by using the command: <p class="code-text">"git --version"</p></p>
+        <!----          
           31M+ developers building on github
           96M+ repositories hosted on github
-          public or private
-
-
 
           Repository: collection of all the files and history those files. often shortened as "repo" and are often placed in a folder. 
           cloning: copying a repository from a remote server
           Branches: all commits are available on a branch
 
           touch: skapar någonting
-          touch index.html = skapar en fil med namn Index.html
-          code . = öppnar filen i VS code. the dot means the current folder.
-
-          git diff = list the changes that have been made
-
-          git reset --hard (commit-number(behövs inte hela))= ångra en commit. 
         </p> --->
 
 
         <h1 class="margin-top"> Add & Commit </h1>
-        <p>
+        <p class="margin-top2">
           You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen further down.
         </p>
         <p>
@@ -145,81 +107,100 @@
       <div class="grid">
 
         <div class="command">
-
+          <!-- Drop-down with bootstrap -->
           <div class="canvas">
-              <a href="#git-commit" class="code-text" id="git-commit">git commit -m "bug-fix"</a>
-              <p class="explanation">Commit changes with a message within the quotes</p>
+              <a data-toggle="collapse" href="#bug-fix" class="code-text" id="git-commit">git commit -m "bug-fix"</a>
+              <p class="explanation collapse" id="bug-fix">Commit changes with a message within the quotes</p>
             </div>
 
             <div class="canvas">
-              <a href="index.html#init" class="code-text" id="init">git init</a>
-              <p class="explanation">Initialize a local Git repository</p>
+              <a data-toggle="collapse" href="#git-init" class="code-text" id="init">git init</a>
+              <p class="explanation collapse" id="git-init">Initialize a local Git repository</p>
               <!-- <p class="explanation">"blesses" the current directory and turns it into a git repo</p> -->
             </div>
             
             <div class="canvas">
-              <a href="index.html#status" class="code-text" id="status">git status</a>
-              <p class="explanation">Checks and describes the state of the current repo</p>
+              <a data-toggle="collapse" href="#git-status" class="code-text" id="status">git status</a>
+              <p class="explanation collapse" id="git-status">Checks and describes the state of the current repo</p>
             </div>
             <div class="canvas">
-              <a href="index.html#pull" class="code-text" id="pull">git pull</a>
-              <p class="explanation">Update your local repository to the latest commit, for exampel from Github</p>
+              <a data-toggle="collapse" href="#git-pull" class="code-text" id="pull">git pull</a>
+              <p class="explanation collapse" id="git-pull">Update your local repository to the latest commit, for exampel from Github</p>
             </div>
             <div class="canvas">
-              <a href="index.html#push" class="code-text" id="push">git push</a>
-              <p class="explanation"> Push the changes to remote repository, for exampel to Github.</p>
+              <a data-toggle="collapse" href="#git-push" class="code-text"  id="push">git push</a>
+              <p class="explanation collapse" id="git-push"> Push the changes to remote repository, for exampel to Github.</p>
             </div>
             <div class="canvas">
-              <a href="index.html#branch" class="code-text" id="branch">git branch</a>
-              <p class="explanation">List all the branches and marks the current branch</p>
+              <a data-toggle="collapse" href="#git-branch" class="code-text" id="branch">git branch</a>
+              <p class="explanation collapse" id="git-branch">List all the branches and marks the current branch</p>
             </div>
             <div class="canvas">
-              <a href="index.html#add" class="code-text" id="add" href>git add .</a>
-              <p class="explanation">Adding all the files to the staging area</p>
+              <a data-toggle="collapse" href="#git-add" class="code-text" id="add" href>git add .</a>
+              <p class="explanation collapse" id="git-add">Adding all the files to the staging area</p>
             </div>
             <div class="canvas">
-              <a href="index.html#remove" class="code-text" id="remove">git rm -r [file-name.txt]</a>
-              <p class="explanation">Remove a file or a folder with the specific name</p>
+              <a data-toggle="collapse" href="#git-rm" class="code-text" id="remove">git rm -r [file-name.txt]</a>
+              <p class="explanation collapse" id="git-rm">Remove a file or a folder with the specific name</p>
             </div>
+            <div class="canvas">
+                <a data-toggle="collapse" href="#git-reset" class="code-text" id="commit-number">git reset --hard (commit-number)</a>
+                <p class="explanation collapse" id="git-reset">Undo a commit.</p>
+            </div>
+            <div class="canvas">
+                <a data-toggle="collapse" href="#git-diff" class="code-text" id="diff">git diff</a>
+                <p class="explanation collapse" id="git-diff">list the changes that have been made</p>
+              </div>
+
           
 
         </div>
         <div class="command">
           <div class="canvas">
-            <a href="index.html#origin" class="code-text" id="origin">git push origin [branch name]	</a>
-            <p class="explanation">Push a branch to your remote repository</p>
+            <a data-toggle="collapse" href="#git-push-origin" class="code-text" id="origin">git push origin [branch name]	</a>
+            <p class="explanation collapse" id="git-push-origin">Push a branch to your remote repository</p>
           </div>
           <div class="canvas">
-            <p class="code-text">git push -u origin [branch name]</p>
-            <p class="explanation">Push changes to remote repository and remember the branch</p>
+            <a data-toggle="collapse" href="#git-push-u" class="code-text">git push -u origin [branch name]</a>
+            <p class="explanation collapse" id="git-push-u">Push changes to remote repository and remember the branch</p>
           </div>
           <div class="canvas">
-            <p class="code-text">git log</p>
-            <p class="explanation">View the changes, the different commits, commit-number, author and date</p>
+            <a data-toggle="collapse" href="#git-log" class="code-text">git log</a>
+            <p class="explanation collapse" id="git-log">View the changes, the different commits, commit-number, author and date</p>
           </div>
           <div class="canvas">
-            <p class="code-text">git checkout -b [branch name]	</p>
-            <p class="explanation">Create a new branch and switch to it</p>
+            <a data-toggle="collapse" href="#git-checkout-b" class="code-text">git checkout -b [branch name]	</a>
+            <p class="explanation collapse" id="git-checkout-b">Create a new branch and switch to it</p>
           </div>
           <div class="canvas">
-              <p class="code-text">git checkout master</p>
-              <p class="explanation">Switch branch to masterbranch</p>
+              <a data-toggle="collapse" href="#git-checkout-master" class="code-text">git checkout master</a>
+              <p class="explanation collapse" id="git-checkout-master">Switch branch to masterbranch</p>
             </div>
           <div class="canvas">
-            <a href="index.html#checkout" class="code-text" id="checkout">git checkout [branch name]</a>
-            <p class="explanation">Switch to a branch by using the branchnamne</p>
+            <a data-toggle="collapse" href="#git-checkout-branchname" class="code-text">git checkout [branch name]</a>
+            <p class="explanation collapse" id="git-checkout-branchname">Switch to a branch by using the branchnamne</p>
           </div>
           <div class="canvas">
-            <p class="code-text">git add -A</p>
-            <p class="explanation">Adding all new and changed files to the staging area</p>
+            <a data-toggle="collapse" href="#git-add-A" class="code-text">git add -A</a>
+            <p class="explanation collapse" id="git-add-A">Adding all new and changed files to the staging area</p>
           </div>
           <div class="canvas">
-            <p class="code-text">git add [file-name.txt]	</p>
-            <p class="explanation">Adding a specific file to the staging area </p>
-              </p>
+            <a data-toggle="collapse" href="#git-add-file" class="code-text">git add [file-name.txt]	</a>
+            <p class="explanation collapse" id="git-add-file">Adding a specific file to the staging area </p>
           </div>
-
-
+          <div class="canvas">
+              <a data-toggle="collapse" href="#git-touch" class="code-text">touch index.html</a>
+              <p class="explanation collapse" id="git-touch">Creates a file with the name "Index.html"</p>
+          </div>
+          <!--
+          <div class="canvas">
+                <a data-toggle="collapse" href="#git-code" class="code-text">code .</a>
+                <p class="explanation collapse" id="git-code">Opens the file in the VS code. The dot means the current folder.</p>
+          </div>-->
+          <div class="canvas">
+                <a data-toggle="collapse" href="#git-code" class="code-text">git clone [url]</a>
+                <p class="explanation collapse" id="git-code">git clone is used to clone an existing remote repository(often shortened as "repo") into your computer</p>
+          </div>
         </div>
       </div>
       </div>
@@ -231,7 +212,7 @@
              <div class="canvas">
 
               <h1 class="margin-top">Arbeta med git</h1>
-              <p>
+              <p class="margin-top2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
                 velit sed voluptate voluptatum esse exercitationem, ipsum impedit
                 consequatur, expedita at rem quas commodi optio ad. Beatae culpa ab quam
@@ -242,7 +223,7 @@
                 adipisicing elit.
               </p>
               <h1 class="margin-top">Branches And Merge</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, fuga omnis ipsam minima harum dolorem laudantium eveniet eius sunt tempore totam, natus ab, cupiditate ad deleniti praesentium rem! Saepe, voluptas.</p>
+              <p class="margin-top2">In Git, "merge" is when you integrating another branch into your current working branch. You're using your changes and combine them with your current working files.</p>
               <h1 class="margin-top">Branches
 
                 <img class="branch-logo" src="images/branch-symbol.png" alt="">
@@ -255,5 +236,20 @@
 
     </div>
     <script src="searchbar.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>

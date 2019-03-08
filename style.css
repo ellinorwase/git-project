@@ -5,6 +5,7 @@
     color: black;
 }
 
+
 .searchField{
     grid-column-start: 5;
     color: black;
@@ -24,10 +25,20 @@
     text-align: left;
 }
 
+div>a{
+    color: black;
+}
+
+div>a:hover{
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+}
+
 h1,p{
     text-align: center;
     margin: 0 30px 0 30px;
 }
+
 p{
     font-size: 22px;
     font-family: 'Glegoo', serif;
@@ -36,6 +47,10 @@ p{
 .margin-top{
     margin-top: 60px;
 
+}
+
+.margin-top2{
+    margin-top: 20px;
 }
 img{
     width: 50%;
@@ -118,7 +133,7 @@ div.commands>h2{
 .commands{
     z-index: -1;
     background-size: cover;
-    background-image: url(images/commands-git.jpeg);
+    background-image: url(images/office.jpeg);
     height: 100%;
     background-attachment: fixed;
 }
@@ -135,7 +150,7 @@ input{
     border-radius: 10px;
     height: 30px;
 }
-button{
+button.searchbutton{
     border-radius: 10px;
     height: 30px;
 }
@@ -147,9 +162,6 @@ button{
     font-size: 35px;
     text-align: center;
     margin: 14px 0 14px 0;
-    font-family: 'Press Start 2P', cursive;
-    font-family: 'PT Mono', monospace;
-    font-family: 'VT323', monospace;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 
 
