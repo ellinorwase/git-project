@@ -86,9 +86,9 @@
         <p class="margin-top2">
           You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen further down.
         </p>
-        <p>
+        <img src="images/GIT2.png" alt="" class="commands-pic">
 
-        </p>
+
       </div>
         <div class="under-logo">
           <a href="https://git-scm.com/" target="_blank">
@@ -125,11 +125,15 @@
             </div>
             <div class="canvas">
               <a data-toggle="collapse" href="#git-pull" class="code-text" id="pull">git pull</a>
-              <p class="explanation collapse" id="git-pull">Update your local repository to the latest commit, for exampel from Github</p>
+              <p class="explanation collapse" id="git-pull">Update your local repository to the latest commit, for exampel from Github
+                <img src="images/git-pull.png" alt="">
+              </p>
             </div>
             <div class="canvas">
               <a data-toggle="collapse" href="#git-push" class="code-text"  id="push">git push</a>
-              <p class="explanation collapse" id="git-push"> Push the changes to remote repository, for exampel to Github.</p>
+              <p class="explanation collapse" id="git-push"> Push the changes to remote repository, for exampel to Github.
+                <img src="images/git-push.png" alt="">
+              </p>
             </div>
             <div class="canvas">
               <a data-toggle="collapse" href="#git-branch" class="code-text" id="branch">git branch</a>
@@ -137,7 +141,9 @@
             </div>
             <div class="canvas">
               <a data-toggle="collapse" href="#git-add" class="code-text" id="add" href>git add .</a>
-              <p class="explanation collapse" id="git-add">Adding all the files to the staging area</p>
+              <p class="explanation collapse" id="git-add">Adding all the files to the staging area
+                <img src="images/git-add.png" alt="">
+              </p>
             </div>
             <div class="canvas">
               <a data-toggle="collapse" href="#git-rm" class="code-text" id="remove">git rm -r [file-name.txt]</a>
@@ -151,8 +157,13 @@
                 <a data-toggle="collapse" href="#git-diff" class="code-text" id="diff">git diff</a>
                 <p class="explanation collapse" id="git-diff">list the changes that have been made</p>
               </div>
-
-          
+              <div class="canvas">
+                  <a data-toggle="collapse" href="#git-fetch" class="code-text" id="fetch">git fetch</a>
+                  <p class="explanation collapse" id="git-fetch">git fetch is the command that says "bring my local copy of the remote repository up to date." <br>
+                    <img src="images/git-fetch.png" alt="">
+                  </p>
+                  <!--git pull does a git fetch followed by a git merge-->
+            </div> 
 
         </div>
         <div class="command">
@@ -165,20 +176,26 @@
             <p class="explanation collapse" id="git-push-u">Push changes to remote repository and remember the branch</p>
           </div>
           <div class="canvas">
-            <a data-toggle="collapse" href="#git-log" class="code-text">git log</a>
+            <a data-toggle="collapse" href="#git-log" class="code-text" id="log">git log</a>
             <p class="explanation collapse" id="git-log">View the changes, the different commits, commit-number, author and date</p>
           </div>
           <div class="canvas">
             <a data-toggle="collapse" href="#git-checkout-b" class="code-text">git checkout -b [branch name]	</a>
-            <p class="explanation collapse" id="git-checkout-b">Create a new branch and switch to it</p>
+            <p class="explanation collapse" id="git-checkout-b">Create a new branch and switch to it <br>
+              <img src="images/Group-1-branch.png" alt="">
+            </p>
           </div>
           <div class="canvas">
               <a data-toggle="collapse" href="#git-checkout-master" class="code-text">git checkout master</a>
-              <p class="explanation collapse" id="git-checkout-master">Switch branch to masterbranch</p>
+              <p class="explanation collapse" id="git-checkout-master">Switch branch to masterbranch <br>
+                  <img src="images/Group-1-master.png" alt="">
+              </p>
             </div>
           <div class="canvas">
             <a data-toggle="collapse" href="#git-checkout-branchname" class="code-text">git checkout [branch name]</a>
-            <p class="explanation collapse" id="git-checkout-branchname">Switch to a branch by using the branchnamne</p>
+            <p class="explanation collapse" id="git-checkout-branchname">Switch to a branch by using the branchnamne <br>
+                <img src="images/Group-1-branch.png" alt="">
+            </p>
           </div>
           <div class="canvas">
             <a data-toggle="collapse" href="#git-add-A" class="code-text">git add -A</a>
@@ -189,7 +206,7 @@
             <p class="explanation collapse" id="git-add-file">Adding a specific file to the staging area </p>
           </div>
           <div class="canvas">
-              <a data-toggle="collapse" href="#git-touch" class="code-text">touch index.html</a>
+              <a data-toggle="collapse" href="#git-touch" class="code-text" id="touch">touch index.html</a>
               <p class="explanation collapse" id="git-touch">Creates a file with the name "Index.html"</p>
           </div>
           <!--
@@ -198,12 +215,19 @@
                 <p class="explanation collapse" id="git-code">Opens the file in the VS code. The dot means the current folder.</p>
           </div>-->
           <div class="canvas">
-                <a data-toggle="collapse" href="#git-code" class="code-text">git clone [url]</a>
+                <a data-toggle="collapse" href="#git-code" class="code-text" id="clone">git clone [url]</a>
                 <p class="explanation collapse" id="git-code">git clone is used to clone an existing remote repository(often shortened as "repo") into your computer</p>
           </div>
+          <div class="canvas">
+                <a data-toggle="collapse" href="#git-merge" class="code-text">git merge [branch name]</a>
+                <p class="explanation collapse" id="git-merge">Use git merge when you whant to merge a branch into the active branch
+                  <img src="images/Group-1.merge.png" alt="">
+                </p>
+          </div>	
         </div>
       </div>
-      </div>
+
+    </div>
 
       <div class="work-with-git" id="work-with-git">
           <div class="heading">
