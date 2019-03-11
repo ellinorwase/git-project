@@ -243,29 +243,31 @@
                   <h1 class="margin-top"> Get started with git</h1>
                   <p class="margin-top2">if you don't already have git installed you can start by installing it by pressing the orange git-symbol below. When you have Git installed you can open the terminal and check if it's there by using the command: <p class="code-text">"git --version"</p></p>
 
-          
-                  <h1 class="margin-top"> Add & Commit </h1>
-                  <p class="margin-top2">
-                    You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen further down.
-                  </p>
-                  <img src="images/GIT2.png" alt="" class="commands-pic">
-          
-          
                   <p class="margin-top2">
                     The next step is to create a new repository by open a new directory that you have created and then perform a <p class="code-text">"git init"</p></p>
-                    <p>and there you have a new git repository</p>
+                    <p>and there you have a new git repository.</p>
                     <p href="#git-url" id="url" >If you whant to download an existing remote repository you want to run the command:</p>
                     <p class="code-text">git clone "Web URL"</p>
                     <img class="web-url" src="images/web-url.png"alt="">
+          
+                  <h1 class="margin-top"> Add & Commit </h1>
+                  <p class="margin-top2">
+                    You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen above followd by the headline "Commands".
+                  </p>
+                  <img src="images/GIT2.png" alt="" class="commands-pic">
+          
+                  <h1 class="margin-top" href="#git-merge" id="branch">Branches
+                  <img class="branch-logo" src="images/branch-symbol.png" alt="">
+                  <p class="margin-top2">A better way to keep track on your different features when you are working in git is by using different branches for each feature, it keeps the features isolated fron each other. The "default" branch when you create a repository is the master branch. You use the other branches for development and then merge them back to the master branch when the feature is complete. </p>
+                  <p>An advice is to name the branches related to each features. This helps you if you want to go back and make a change later on is that specific feature.</p>
+                  <img src="images/merge-git.png" class="merge-pic" alt="">
+                  
                     <h1 class="margin-top" href="#git-merge" id="merge">Merge</h1>
-                    <p class="margin-top2">In Git, "merge" is when you integrating another branch into your current working branch. You're using your changes and combine them with your current working files.</p>
-                    <img src="images/merge-git.png" class="merge-pic" alt="">
-                    <h1 class="margin-top" href="#git-merge" id="branch">Branches
-                      
-                      <img class="branch-logo" src="images/branch-symbol.png" alt="">
+                    <p class="margin-top2">In Git, "merge" is when you integrating another branch into your current working branch. You're using your changes and combine them with your current working files. It is easy to merge in git, you just hade to use the command:</p> <p class="code-text">git merge "and-the-branch-name-here"</p> <p>This means that you will merge the branch that you are currently in with the branch inside the quotes. And git will figure out how to integrate new changes, most of the time.</p>
                     </h1>
                     <h1 class="margin-top">Conflicts</h1>
-                    <p>Git is not always perfect</p>
+                    <p class="margin-top2">Git is not always perfect and can become a bit complicated if two poeple are changing in the same file. Conflicts are most likely to happend when working in team. </p>
+                    <p>A conflict shows when more than one person has made changes the same branch and have made edits on the same line or something has been edited in one branch and deleted in the other.</p>
                   </div>
       </div>
       </div>

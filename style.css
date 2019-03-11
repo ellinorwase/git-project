@@ -32,7 +32,12 @@ div>a{
 div>a:hover{
     text-decoration: none;
     color: #F05133;
-    color: rgb(99, 130, 168);
+    font-size: 38px;
+}
+
+div.menu>a:hover{
+    text-decoration: none;
+    color: rgb(27, 23, 22);
 }
 
 h1,p{
