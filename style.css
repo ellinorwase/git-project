@@ -85,6 +85,11 @@ img{
     background-color: rgba(255, 255, 255, 0.514);
     border-radius: 90px;
 }
+
+.web-url{
+    width: 25%;
+    height: auto;
+}
 .underline{
     background-color: #F05133;
     width: 100%;
@@ -321,6 +326,18 @@ img.commands-pic{
     div.canvas>p.explanation>a>img{
         width: 100%;
         height: auto;
+    }
+    .web-url{
+        width: 70%;
+        height: auto;
+    }
+
+    .about-git{
+        z-index: -1;
+        background-size: cover;
+        background-image: url(images/background-index.jpeg);
+        height: auto;
+        background-attachment: fixed;
     }
 
 }

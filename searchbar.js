@@ -7,7 +7,7 @@ let arr = [document.getElementById('git'), document.getElementById('github'), do
 document.getElementById('commit'), document.getElementById('status'), document.getElementById('pull'),
 document.getElementById('push'), document.getElementById('branch'), document.getElementById('add'),
 document.getElementById('log'), document.getElementById('checkout'), document.getElementById('work-with-git'),
-document.getElementById('branches'), document.getElementById("merge"), document.getElementById("remove"), document.getElementById("origin"), document.getElementById('checkout'), document.getElementById('init'), document.getElementById('diff'), document.getElementById('touch'), document.getElementById('fetch'), document.getElementById('clone')];
+document.getElementById('branches'), document.getElementById("merge"), document.getElementById("remove"), document.getElementById("origin"), document.getElementById('checkout'), document.getElementById('init'), document.getElementById('diff'), document.getElementById('touch'), document.getElementById('fetch'), document.getElementById('clone'), document.getElementById('url')];
 
 for (let i = 0; i < arr.length; i++) {
 
@@ -18,7 +18,5 @@ for (let i = 0; i < arr.length; i++) {
         document.getElementById('searchBtn').href = '#' + link.id;
         // `#${link.id}`
         }  
-    else{
-    }
 }
 }
