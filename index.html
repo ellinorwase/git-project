@@ -67,8 +67,6 @@
           </ol>
         -->
                           <!----          
-                    31M+ developers building on github
-                    96M+ repositories hosted on github
           
                     Repository: collection of all the files and history those files. often shortened as "repo" and are often placed in a folder. 
                     cloning: copying a repository from a remote server
@@ -81,7 +79,7 @@
       
         <div class="under-logo">
           <a href="https://git-scm.com/" target="_blank">
-            <img src="images/git (kopia).png" alt="" class="git-logos">
+            <img src="images/git().png" alt="" class="git-logos">
           </a>
           <a href="https://github.com/" target="_blank">
             <img src="images/github-logo.png" alt="" class="git-logos">
@@ -105,7 +103,6 @@
             <div class="canvas">
               <a data-toggle="collapse" href="#git-init" class="code-text" id="init">git init</a>
               <p class="explanation collapse" id="git-init">Initialize a local Git repository</p>
-              <!-- <p class="explanation">"blesses" the current directory and turns it into a git repo</p> -->
             </div>
             
             <div class="canvas">
@@ -133,7 +130,7 @@
               <p class="explanation collapse" id="git-branch">List all the branches and marks the current branch</p>
             </div>
             <div class="canvas">
-              <a data-toggle="collapse" href="#git-add" class="code-text" id="add" href>git add .</a>
+              <a data-toggle="collapse" href="#git-add" class="code-text" id="add">git add .</a>
               <p class="explanation collapse" id="git-add">Adding all the files to the staging area <br>
                 <a href="">
                   <img src="images/git-add.png" alt="">
@@ -241,35 +238,41 @@
              <div class="canvas">
 
                   <h1 class="margin-top"> Get started with git</h1>
-                  <p class="margin-top2">if you don't already have git installed you can start by installing it by pressing the orange git-symbol below. When you have Git installed you can open the terminal and check if it's there by using the command: <p class="code-text">"git --version"</p></p>
+                  <p class="margin-top2">if you don't already have git installed you can start by installing it by pressing the orange git-symbol above. When you have Git installed you can open the terminal and check if it's there by using the command: </p> 
+                  <p class="code-text">"git --version"</p>
 
                   <p class="margin-top2">
-                    The next step is to create a new repository by open a new directory that you have created and then perform a <p class="code-text">"git init"</p></p>
+                    The next step is to create a new repository. click on 
+                    <img class="plus" src="images/plus.png" alt=""> , followed by clicking on                "New repository"</p> 
+                    <!-- <p class="code-text">"git init"</p> -->
+                    <p>Name your repository. For exampel, I have named my repository for this project to "git-project". Then choose if you want to make the repository either public or private. </p>
+                    <p>Select Initialize this repository with a README before pressing create repository.</p>
                     <p>and there you have a new git repository.</p>
-                    <p href="#git-url" id="url" >If you whant to download an existing remote repository you want to run the command:</p>
+                    <p class="margin-top">If you whant to download an existing remote repository you want to run the command:</p>
                     <p class="code-text">git clone "Web URL"</p>
-                    <img class="web-url" src="images/web-url.png"alt="">
+                    <img class="web-url" src="images/web-url.png" alt="">
           
                   <h1 class="margin-top"> Add & Commit </h1>
                   <p class="margin-top2">
                     You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen above followd by the headline "Commands".
                   </p>
+                  <p>The picture below shows a more clear picture of the different stages between your working directory and remote repo</p>
                   <img src="images/GIT2.png" alt="" class="commands-pic">
           
-                  <h1 class="margin-top" href="#git-merge" id="branch">Branches
+                  <h1 class="margin-top">Branches</h1>
                   <img class="branch-logo" src="images/branch-symbol.png" alt="">
-                  <p class="margin-top2">A better way to keep track on your different features when you are working in git is by using different branches for each feature, it keeps the features isolated fron each other. The "default" branch when you create a repository is the master branch. You use the other branches for development and then merge them back to the master branch when the feature is complete. </p>
+                  <p class="margin-top2">A good way to keep track on your different features when you're working in git is by using different branches for each feature, it keeps the features isolated from each other. The "default" branch when you create a repository is the master branch. You use the other branches for development and then merge them back to the master branch when the feature is complete. </p>
                   <p>An advice is to name the branches related to each features. This helps you if you want to go back and make a change later on is that specific feature.</p>
                   <img src="images/merge-git.png" class="merge-pic" alt="">
                   
-                    <h1 class="margin-top" href="#git-merge" id="merge">Merge</h1>
-                    <p class="margin-top2">In Git, "merge" is when you integrating another branch into your current working branch. You're using your changes and combine them with your current working files. It is easy to merge in git, you just hade to use the command:</p> <p class="code-text">git merge "and-the-branch-name-here"</p> <p>This means that you will merge the branch that you are currently in with the branch inside the quotes. And git will figure out how to integrate new changes, most of the time.</p>
-                    </h1>
+                    <h1 class="margin-top">Merge</h1>
+                    <p class="margin-top2">In Git, "merge" is when you integrating another branch into your current working branch. You're using your changes and combine them with your current working files. It's easy to merge in git, you just have to use the command:</p> <p class="code-text">git merge "and-the-branch-name"</p> <p>This means that you will merge the branch that you are currently in with the branch inside the quotes. And git will figure out how to integrate new changes successfully... most of the time.</p>
+
                     <h1 class="margin-top">Conflicts</h1>
-                    <p class="margin-top2">Git is not always perfect and can become a bit complicated if two poeple are changing in the same file. Conflicts are most likely to happend when working in team. </p>
-                    <p>A conflict shows when more than one person has made changes the same branch and have made edits on the same line or something has been edited in one branch and deleted in the other.</p>
+                    <p class="margin-top2">Git is not always perfect and can become a bit complicated if two poeple are working and changing in the same file. Conflicts are most likely to happend when working in team. </p>
+                    <p>A conflict shows when more than one person has made changes in the same branch and made edits on the same line or something has been edited in one branch and deleted in the other.</p>
+                    <p>If this happends, git will mark the file as having a conflict - which you'll have to solve before you can continue.</p>
                   </div>
-      </div>
       </div>
 
     </div>

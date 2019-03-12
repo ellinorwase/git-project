@@ -29,11 +29,12 @@ div>a{
     color: black;
 }
 
-div>a:hover{
+div>a.code-text:hover{
     text-decoration: none;
     color: #F05133;
-    font-size: 38px;
+    font-size: 36px;
 }
+
 
 div.menu>a:hover{
     text-decoration: none;
@@ -237,6 +238,10 @@ img.commands-pic{
     background-image: url(images/branches5.jpeg);
     height: 100%;
     background-attachment: fixed;
+}
+
+.plus{
+    width: 30px;
 }
 
 #commands{
