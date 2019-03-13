@@ -1,353 +1,371 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    scroll-behavior: smooth;
-    color: black;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  scroll-behavior: smooth;
+  color: black;
 }
 
-
-.searchField{
-    grid-column-start: 5;
-    color: black;
-    float: right;
-    padding: 10px;
-    margin: 20px 20px 0 0;
+.under-logo > a:hover {
+  text-decoration: none;
 }
 
-#searchBtn{
-    color: black;
-    width: 200px;
-    font-size: 14px;
+.searchField {
+  grid-column-start: 5;
+  color: black;
+  float: right;
+  padding: 10px;
+  margin: 20px 20px 0 0;
 }
 
-.main-content{
-    width: 100%;
-    text-align: left;
+#searchBtn {
+  color: black;
+  width: 200px;
+  font-size: 14px;
 }
 
-div>a{
-    color: black;
+.main-content {
+  width: 100%;
+  text-align: left;
 }
 
-div>a.code-text:hover{
-    text-decoration: none;
-    color: #F05133;
-    font-size: 36px;
+div > a {
+  color: black;
 }
 
-
-div.menu>a:hover{
-    text-decoration: none;
-    color: rgb(27, 23, 22);
+div > a.code-text:hover {
+  text-decoration: none;
+  color: #f05133;
+  font-size: 36px;
 }
 
-h1,p{
-    text-align: center;
-    margin: 0 30px 0 30px;
+div.menu > a:hover {
+  text-decoration: none;
+  color: rgb(27, 23, 22);
 }
 
-p{
-    font-size: 22px;
-    font-family: 'Glegoo', serif;
+h1,
+p {
+  text-align: center;
+  margin: 0 30px 0 30px;
 }
 
-.margin-top{
-    margin-top: 60px;
-
+p {
+  font-size: 22px;
+  font-family: "Glegoo", serif;
 }
 
-.margin-top2{
-    margin-top: 20px;
-}
-img{
-    width: 50%;
-    z-index: 6;
-}
-.menu{
-    font-family: 'Francois One', sans-serif;
-    margin-top: 0px;
-    width: 64%;
-    transition: all 1s ease 0s;
-    display:inline-block;  
-    font-size: 35px;
-    text-align: center;
-    position: fixed;
-    z-index: 6;
-
+.margin-top {
+  margin-top: 60px;
 }
 
-.about-git{
-    z-index: -1;
-    background-size: cover;
-    background-image: url(images/background-index.jpeg);
-    height: auto;
-    background-attachment: fixed;
+.margin-top2 {
+  margin-top: 20px;
 }
 
-.logo{
-    width: 18%;
-    height: auto;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.514);
-    border-radius: 90px;
+img {
+  width: 50%;
+  z-index: 6;
 }
 
-.web-url{
-    width: 25%;
-    height: auto;
-}
-.underline{
-    background-color: #F05133;
-    width: 100%;
-    height: 2px;
-    margin: auto;
-}
-.git-logos{
-    width: 150px;
-    height: auto;
-    margin: 0 50px 0 50px;
-    margin-bottom: 20px;
-}
-.under-logo{
-    text-align: center;
-    margin: 40px;
-    margin-bottom: 0px;
+.menu {
+  font-family: "Francois One", sans-serif;
+  margin-top: 0px;
+  width: 64%;
+  transition: all 1s ease 0s;
+  display: inline-block;
+  font-size: 35px;
+  text-align: center;
+  position: fixed;
+  z-index: 6;
 }
 
-a.navigation{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    margin: 0px 30px 0px 30px;
-    text-decoration: none;
-    color: #F05133; 
-
+.about-git {
+  z-index: -1;
+  background-size: cover;
+  background-image: url(images/background-index.jpeg);
+  height: auto;
+  background-attachment: fixed;
 }
 
-div.canvas>p.explanation>a>img:hover{
-    width: 100%;
-    height: auto;
+.logo {
+  width: 18%;
+  height: auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.514);
+  border-radius: 90px;
 }
 
-div.heading>h2{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 60px;
+.web-url {
+  width: 25%;
+  height: auto;
 }
 
-div.heading{
-    background-color: rgba(182, 182, 182, 0.714);
-    height: 220px;
-    padding-top: 70px;
-}
-div.commands>h2{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    margin: 14px 0 14px;
+.underline {
+  background-color: #f05133;
+  width: 100%;
+  height: 2px;
+  margin: auto;
 }
 
-.commands{
-    z-index: -1;
-    background-size: cover;
-    background-image: url(images/office.jpeg);
-    height: 100%;
-    background-attachment: fixed;
+.git-logos {
+  width: 150px;
+  height: auto;
+  margin: 0 50px 0 50px;
+  margin-bottom: 20px;
 }
 
-.command{
-    z-index: 0;
-    margin: auto;
-    width: 100%;
-    border-radius: 4px;
-    color: #F05133;
+.under-logo {
+  text-align: center;
+  margin: 40px;
+  margin-bottom: 0px;
 }
 
-input{
-    border-radius: 10px;
-    height: 30px;
-}
-button.searchbutton{
-    border-radius: 10px;
-    height: 30px;
-}
-.searchbutton>a{
-    text-decoration: none;
-}
-
-.code-text{
-    font-size: 35px;
-    text-align: center;
-    margin: 14px 0 14px 0;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-
+a.navigation {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin: 0px 30px 0px 30px;
+  text-decoration: none;
+  color: #f05133;
 }
 
-h2{
-    color: white;
+div.canvas > p.explanation > a > img:hover {
+  width: 100%;
+  height: auto;
 }
 
-.explanation{
-    z-index: 0;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+div.heading > h2 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 60px;
+}
+
+div.heading {
+  background-color: rgba(182, 182, 182, 0.714);
+  height: 220px;
+  padding-top: 70px;
+}
+
+div.commands > h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  margin: 14px 0 14px;
+}
+
+.commands {
+  z-index: -1;
+  background-size: cover;
+  background-image: url(images/office.jpeg);
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.command {
+  z-index: 0;
+  margin: auto;
+  width: 100%;
+  border-radius: 4px;
+  color: #f05133;
+}
+
+input {
+  border-radius: 10px;
+  height: 30px;
+}
+
+button.searchbutton {
+  border-radius: 10px;
+  height: 30px;
+}
+
+.searchbutton > a {
+  text-decoration: none;
+}
+
+.code-text {
+  font-size: 35px;
+  text-align: center;
+  margin: 14px 0 14px 0;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+h2 {
+  color: white;
+}
+
+.explanation {
+  z-index: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
-.clearfix{
-    clear: both;
-    display: table;
+.clearfix {
+  clear: both;
+  display: table;
 }
 
-img.commands-pic{
-    margin: 10px auto 10px auto;
-    width: 40%;
+img.commands-pic {
+  margin: 10px auto 10px auto;
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+
+.canvas {
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.79);
+  margin: auto;
+  padding: 10px;
+  width: 86%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.canvas > a {
+  text-decoration: none;
+}
+
+.work-with-git {
+  z-index: -1;
+  background-size: cover;
+  background-image: url(images/branches5.jpeg);
+  height: 100%;
+  background-attachment: fixed;
+}
+
+img.conflict:hover {
+  width: 800px;
+  height: auto;
+}
+
+.plus {
+  width: 30px;
+}
+
+#commands {
+  scroll-behavior: smooth;
+}
+
+.branch-logo {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    width: 100%;
+    text-align: left;
+  }
+  .git-logos {
+    width: 100px;
     height: auto;
+    margin: 0 50px 0 50px;
+  }
+  .menu {
+    font-family: "Old Standard TT", serif;
+    margin-top: 0px;
+    width: 66%;
+    transition: all 1s ease 0s;
+    display: inline-block;
+    font-size: 150%;
     text-align: center;
-}
+    position: relative;
+    z-index: 6;
+  }
+  a.navigation {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding: 2px;
+  }
 
-.canvas{
-    z-index: 0;
-    background-color: rgba(255, 255, 255, 0.79);
-    margin: auto;
-    padding: 10px;
-    width: 86%;
+  .commands {
+    z-index: -1;
+    background-size: cover;
+    background-image: url(images/commands-git.jpeg);
     height: auto;
-    border-radius: 4px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-.canvas>a{
-    text-decoration: none;
-}
+    background-attachment: fixed;
+    display: block;
+  }
 
-.work-with-git{
+  .work-with-git {
     z-index: -1;
     background-size: cover;
     background-image: url(images/branches5.jpeg);
     height: 100%;
     background-attachment: fixed;
-}
+  }
 
-.plus{
-    width: 30px;
-}
+  h1,
+  p {
+    text-align: center;
+    margin: 20px auto 0 auto;
+  }
 
-#commands{
-    scroll-behavior: smooth;
-
-}
-
-.branch-logo{
-    width: 30px;
+  body {
+    width: auto;
+  }
+  
+  img.commands-pic {
+    margin: 10px auto 10px auto;
+    width: 100%;
     height: auto;
-}
+    text-align: center;
+  }
 
+  img.merge-pic {
+    width: 100%;
+  }
 
-@media(max-width:800px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
 
-    .main-content{
-        width: 100%;
-        text-align: left;
-    }
-    .git-logos{
-        width: 100px;
-        height: auto;
-        margin: 0 50px 0 50px;
-    }
-    .menu{
-        font-family: 'Old Standard TT', serif;
-        margin-top: 0px;
-        width: 66%;
-        transition: all 1s ease 0s;
-        display:inline-block;  
-        font-size: 150%;
-        text-align: center;
-        position: relative;
-        z-index: 6; 
-    }
-    a.navigation{
-        display:block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0px auto 0px auto;
-        padding: 2px;
-    }
+  .logo {
+    width: 28%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+  }
 
-    .commands{
-        z-index: -1;
-        background-size: cover;
-        background-image: url(images/commands-git.jpeg);
-        height: auto;
-        background-attachment: fixed;
-        display:block;
-    }
+  div.canvas > p.explanation > a > img {
+    width: 100%;
+    height: auto;
+  }
 
-    .work-with-git{
-        z-index: -1;
-        background-size: cover;
-        background-image: url(images/branches5.jpeg);
-        height: 100%;
-        background-attachment: fixed;
-    }
+  img.conflict {
+    width: 300px;
+    height: auto;
+  }
 
-    h1,p{
-        text-align: center;
-        margin: 20px auto 0 auto;
-    }
+  .web-url {
+    width: 70%;
+    height: auto;
+  }
 
-    body{
-        width: auto;
-    }
-    img.commands-pic{
-        margin: 10px auto 10px auto;
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-    img.merge-pic{
-        width: 100%;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-    }
-
-    .logo{
-        width: 28%;
-        height: auto;
-        padding: 10px;
-        margin: auto;
-    }
-    div.canvas>p.explanation>a>img{
-        width: 100%;
-        height: auto;
-    }
-    .web-url{
-        width: 70%;
-        height: auto;
-    }
-
-    .about-git{
-        z-index: -1;
-        background-size: cover;
-        background-image: url(images/background-index.jpeg);
-        height: auto;
-        background-attachment: fixed;
-    }
-
+  .about-git {
+    z-index: -1;
+    background-size: cover;
+    background-image: url(images/background-index.jpeg);
+    height: auto;
+    background-attachment: fixed;
+  }
 }

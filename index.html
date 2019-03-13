@@ -6,295 +6,500 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Startsida</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Old+Standard+TT"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Glegoo"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Francois+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
   </head>
   <body>
- 
     <div class="main-content">
       <div class="about-git" id="about-git">
-
-        <img src="images/Git.png" class="logo" alt="">
+        <img src="images/Git.png" class="logo" alt="" />
         <div class="menu">
-              <a href="#about-git" class="navigation">About Git</a>
-              <a href="#commands" class="navigation">Commands</a>
-              <a href="#work-with-git" class="navigation">Work with git</a>
-              <div class="underline"></div>
-              
-            </div>
-                <div class="searchField">
-                    <input id="inputSearch" type="text" placeholder="Search.." onkeyup="searchFunction()">
-                    <button class="searchbutton"><a id="searchBtn" href="">Search</a></button>
-                </div>
+          <a href="#about-git" class="navigation">About Git</a>
+          <a href="#commands" class="navigation">Commands</a>
+          <a href="#work-with-git" class="navigation">Work with git</a>
+          <div class="underline"></div>
+        </div>
+        <div class="searchField">
+          <input
+            id="Search"
+            type="text"
+            placeholder="Search.."
+            onkeyup="searchFunction()"
+          />
+          <button class="searchbutton">
+            <a id="searchBtn" href="">Search</a>
+          </button>
+        </div>
         <div class="canvas">
-
-        <h1> About Git</h1>
-        <p class="margin-top2"> Git is a distributed version control tool, designed to handle everything from small to large projects.
-            Git is the system we use to track changes. It's a filesystem that keep a lookout for changes in the files, including who made each change and why they made it. <br>
-            Git help us: <br>
-            1. Track document versions. <br> 2. Keeps an history of document changes. <br> 3. Encourage team work.
+          <h1>About Git</h1>
+          <p class="margin-top2">
+            Git is a distributed version control tool, designed to handle
+            everything from small to large projects. Git is the system we use to
+            track changes. It's a filesystem that keep a lookout for changes in
+            the files, including who made each change and why they made it.
+            <br />
+            Git help us: <br />
+            1. Track document versions. <br />
+            2. Keeps an history of document changes. <br />
+            3. Encourage team work.
           </p>
 
-        <h1 class="margin-top"> Github</h1>
-        
-        <p class="margin-top2">While git is about keeping track of changes in code, GitHub.com is a cloud service that helps teams in communication, collaboration and project management. <br> Github repositories can be private or public. Only the owner and collaborators can view or contribute to a private repository while public repositories are visible to everyone. With that said, you should be careful of what you publish on your public repository.
-        </p>
-        <!--
-          <p>Everyday workflow</p>
-          <ol>
-            <li>Create a file</li>
-            <li>save it</li>
-            <li>Edit it</li>
-            <li>Save it again</li>
-            <li>Etc..</li>
-          </ol>
-          <ol>
-            <li>Send a file to co-worker/friend/spouse</li>
-            <li>File gets changed </li>
-            <li>File gets saved</li>
-            <li>File gets sent back</li>
-            <li>We download the file with new name.</li>
-            repeat
-          </ol>
-        -->
-                          <!----          
-          
-                    Repository: collection of all the files and history those files. often shortened as "repo" and are often placed in a folder. 
-                    cloning: copying a repository from a remote server
-                    Branches: all commits are available on a branch
-          
-                    touch: skapar någonting
-                  </p> --->
-          
-      </div>
-      
+          <h1 class="margin-top">Github</h1>
+
+          <p class="margin-top2">
+            While git is about keeping track of changes in code, GitHub.com is a
+            cloud service that helps teams in communication, collaboration and
+            project management. <br />
+            Github repositories can be private or public. Only the owner and
+            collaborators can view or contribute to a private repository while
+            public repositories are visible to everyone. With that said, you
+            should be careful of what you publish on your public repository.
+          </p>
+        </div>
+
         <div class="under-logo">
           <a href="https://git-scm.com/" target="_blank">
-            <img src="images/git().png" alt="" class="git-logos">
+            <img src="images/git().png" alt="" class="git-logos" />
           </a>
           <a href="https://github.com/" target="_blank">
-            <img src="images/github-logo.png" alt="" class="git-logos">
+            <img src="images/github-logo.png" alt="" class="git-logos" />
           </a>
         </div>
       </div>
 
       <div class="commands" id="commands">
-      <div class="heading">
-       <h2>Commands</h2> 
-      </div>
-      <div class="grid">
-
-        <div class="command">
-          <!-- Drop-down with bootstrap -->
-          <div class="canvas">
-              <a data-toggle="collapse" href="#bug-fix" class="code-text" id="git-commit">git commit -m "bug-fix"</a>
-              <p class="explanation collapse" id="bug-fix">Commit changes with a message within the quotes <br>
-              <a href="">
-                <img src="images/git-commit.png" alt="">
-              </a>
-            </p>
-            </div>
-
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-init" class="code-text" id="init">git init</a>
-              <p class="explanation collapse" id="git-init">Initialize a local Git repository</p>
-            </div>
-            
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-status" class="code-text" id="status">git status</a>
-              <p class="explanation collapse" id="git-status">Checks and describes the state of the current repo</p>
-            </div>
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-pull" class="code-text" id="pull">git pull</a>
-              <p class="explanation collapse" id="git-pull">Update your local repository to the latest commit, for exampel from Github <br>
-                <a href="">
-                    <img src="images/git-pull.png" alt="">
-                </a>
-              </p>
-            </div>
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-push" class="code-text"  id="push">git push</a>
-              <p class="explanation collapse" id="git-push"> Push the changes to remote repository, for exampel to Github. <br>
-                <a href="">
-                  <img src="images/git-push.png" alt="">
-                </a>
-              </p>
-            </div>
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-branch" class="code-text" id="branch">git branch</a>
-              <p class="explanation collapse" id="git-branch">List all the branches and marks the current branch</p>
-            </div>
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-add" class="code-text" id="add">git add .</a>
-              <p class="explanation collapse" id="git-add">Adding all the files to the staging area <br>
-                <a href="">
-                  <img src="images/git-add.png" alt="">
-                </a>
-              </p>
-            </div>
-            <div class="canvas">
-              <a data-toggle="collapse" href="#git-rm" class="code-text" id="remove">git rm -r "file-name.txt"</a>
-              <p class="explanation collapse" id="git-rm">Remove a file or a folder with the specific name</p>
-            </div>
-            <div class="canvas">
-                <a data-toggle="collapse" href="#git-reset" class="code-text" id="commit-number">git reset --hard (commit-number)</a>
-                <p class="explanation collapse" id="git-reset">Undo a commit.</p>
-            </div>
-            <div class="canvas">
-                <a data-toggle="collapse" href="#git-diff" class="code-text" id="diff">git diff</a>
-                <p class="explanation collapse" id="git-diff">list the changes that have been made</p>
-              </div>
-              <div class="canvas">
-                  <a data-toggle="collapse" href="#git-fetch" class="code-text" id="fetch">git fetch</a>
-                  <p class="explanation collapse" id="git-fetch">git fetch is the command that says "bring my local copy of the remote repository up to date." <br>
-                    <a href="">
-                      <img src="images/git-fetch.png" alt="">
-                    </a>
-                  </p>
-                  <!--git pull does a git fetch followed by a git merge-->
-            </div> 
-
+        <div class="heading">
+          <h2>Commands</h2>
         </div>
-        <div class="command">
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-push-origin" class="code-text" id="origin">git push origin [branch name]	</a>
-            <p class="explanation collapse" id="git-push-origin">Push a branch to your remote repository</p>
-          </div>
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-push-u" class="code-text">git push -u origin "branch name"</a>
-            <p class="explanation collapse" id="git-push-u">Push changes to remote repository and remember the branch</p>
-          </div>
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-log" class="code-text" id="log">git log</a>
-            <p class="explanation collapse" id="git-log">View the changes, the different commits, commit-number, author and date</p>
-          </div>
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-checkout-b" class="code-text">git checkout -b "branch name"	</a>
-            <p class="explanation collapse" id="git-checkout-b">Create a new branch and switch to it <br>
-              <a href="">
-                <img src="images/Group-1-branch.png" alt="">
-              </a>
-            </p>
-          </div>
-          <div class="canvas">
-              <a data-toggle="collapse" href="#git-checkout-master" class="code-text">git checkout master</a>
-              <p class="explanation collapse" id="git-checkout-master">Switch branch to masterbranch <br>
+        <div class="grid">
+          <div class="command">
+            <!-- Drop-down with bootstrap -->
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#bug-fix"
+                class="code-text"
+                id="git-commit"
+                >git commit -m "bug-fix"</a
+              >
+              <p class="explanation collapse" id="bug-fix">
+                Commit changes with a message within the quotes <br />
                 <a href="">
-                  <img src="images/Group-1-master.png" alt="">
+                  <img src="images/git-commit.png" alt="" />
                 </a>
               </p>
             </div>
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-checkout-branchname" class="code-text">git checkout "branch name"</a>
-            <p class="explanation collapse" id="git-checkout-branchname">Switch to a branch by using the branchnamne <br>
-              <a href="">
-                <img src="images/Group-1-branch.png" alt="">
+
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-init"
+                class="code-text"
+                id="init"
+                >git init</a
+              >
+              <p class="explanation collapse" id="git-init">
+                Initialize a local Git repository
+              </p>
+            </div>
+
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-status"
+                class="code-text"
+                id="status"
+                >git status</a
+              >
+              <p class="explanation collapse" id="git-status">
+                Checks and describes the state of the current repo
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-pull"
+                class="code-text"
+                id="pull"
+                >git pull</a
+              >
+              <p class="explanation collapse" id="git-pull">
+                Update your local repository to the latest commit, for exampel
+                from Github <br />
+                <a href="">
+                  <img src="images/git-pull.png" alt="" />
+                </a>
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-push"
+                class="code-text"
+                id="push"
+                >git push</a
+              >
+              <p class="explanation collapse" id="git-push">
+                Push the changes to remote repository, for exampel to Github.
+                <br />
+                <a href="">
+                  <img src="images/git-push.png" alt="" />
+                </a>
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-branch"
+                class="code-text"
+                id="branch"
+                >git branch</a
+              >
+              <p class="explanation collapse" id="git-branch">
+                List all the branches and marks the current branch
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-add"
+                class="code-text"
+                id="add"
+                >git add .</a
+              >
+              <p class="explanation collapse" id="git-add">
+                Adding all the files to the staging area <br />
+                <a href="">
+                  <img src="images/git-add.png" alt="" />
+                </a>
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-rm"
+                class="code-text"
+                id="remove"
+                >git rm -r "file-name.txt"</a
+              >
+              <p class="explanation collapse" id="git-rm">
+                Remove a file or a folder with the specific name
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-reset"
+                class="code-text"
+                id="commit-number"
+                >git reset --hard (commit-number)</a
+              >
+              <p class="explanation collapse" id="git-reset">Undo a commit.</p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-diff"
+                class="code-text"
+                id="diff"
+                >git diff</a
+              >
+              <p class="explanation collapse" id="git-diff">
+                list the changes that have been made
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-fetch"
+                class="code-text"
+                id="fetch"
+                >git fetch</a
+              >
+              <p class="explanation collapse" id="git-fetch">
+                git fetch is the command that says "bring my local copy of the
+                remote repository up to date." (git pull does a git fetch
+                followed by a git merge) <br />
+                <a href="">
+                  <img src="images/git-fetch.png" alt="" />
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="command">
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-push-origin"
+                class="code-text"
+                id="origin"
+                >git push origin [branch name]
               </a>
-            </p>
+              <p class="explanation collapse" id="git-push-origin">
+                Push a branch to your remote repository
+              </p>
+            </div>
+            <div class="canvas">
+              <a data-toggle="collapse" href="#git-push-u" class="code-text"
+                >git push -u origin "branch name"</a
+              >
+              <p class="explanation collapse" id="git-push-u">
+                Push changes to remote repository and remember the branch
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-log"
+                class="code-text"
+                id="log"
+                >git log</a
+              >
+              <p class="explanation collapse" id="git-log">
+                View the changes, the different commits, commit-number, author
+                and date
+              </p>
+            </div>
+            <div class="canvas">
+              <a data-toggle="collapse" href="#git-checkout-b" class="code-text"
+                >git checkout -b "branch name"
+              </a>
+              <p class="explanation collapse" id="git-checkout-b">
+                Create a new branch and switch to it <br />
+                <a href="">
+                  <img src="images/Group-1-branch.png" alt="" />
+                </a>
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-checkout-master"
+                class="code-text"
+                >git checkout master</a
+              >
+              <p class="explanation collapse" id="git-checkout-master">
+                Switch branch to masterbranch <br />
+                <a href="">
+                  <img src="images/Group-1-master.png" alt="" />
+                </a>
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-checkout-branchname"
+                class="code-text"
+                >git checkout "branch name"</a
+              >
+              <p class="explanation collapse" id="git-checkout-branchname">
+                Switch to a branch by using the branchnamne <br />
+                <a href="">
+                  <img src="images/Group-1-branch.png" alt="" />
+                </a>
+              </p>
+            </div>
+            <div class="canvas">
+              <a data-toggle="collapse" href="#git-add-A" class="code-text"
+                >git add -A</a
+              >
+              <p class="explanation collapse" id="git-add-A">
+                Adding all new and changed files to the staging area
+              </p>
+            </div>
+            <div class="canvas">
+              <a data-toggle="collapse" href="#git-add-file" class="code-text"
+                >git add "file-name.txt"
+              </a>
+              <p class="explanation collapse" id="git-add-file">
+                Adding a specific file to the staging area
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-touch"
+                class="code-text"
+                id="touch"
+                >touch index.html</a
+              >
+              <p class="explanation collapse" id="git-touch">
+                Creates a file with the name "Index.html"
+              </p>
+            </div>
+            <div class="canvas">
+              <a
+                data-toggle="collapse"
+                href="#git-code"
+                class="code-text"
+                id="clone"
+                >git clone "url"</a
+              >
+              <p class="explanation collapse" id="git-code">
+                git clone is used to clone an existing remote repository(often
+                shortened as "repo") into your computer
+              </p>
+            </div>
+            <div class="canvas">
+              <a data-toggle="collapse" href="#git-merge" class="code-text"
+                >git merge "branch name"</a
+              >
+              <p class="explanation collapse" id="git-merge">
+                Use git merge when you whant to merge a branch into the active
+                branch <br />
+                <a href="">
+                  <img src="images/Group-1.merge.png" alt="" />
+                </a>
+              </p>
+            </div>
           </div>
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-add-A" class="code-text">git add -A</a>
-            <p class="explanation collapse" id="git-add-A">Adding all new and changed files to the staging area</p>
-          </div>
-          <div class="canvas">
-            <a data-toggle="collapse" href="#git-add-file" class="code-text">git add "file-name.txt"	</a>
-            <p class="explanation collapse" id="git-add-file">Adding a specific file to the staging area </p>
-          </div>
-          <div class="canvas">
-              <a data-toggle="collapse" href="#git-touch" class="code-text" id="touch">touch index.html</a>
-              <p class="explanation collapse" id="git-touch">Creates a file with the name "Index.html"</p>
-          </div>
-          <!--
-          <div class="canvas">
-                <a data-toggle="collapse" href="#git-code" class="code-text">code .</a>
-                <p class="explanation collapse" id="git-code">Opens the file in the VS code. The dot means the current folder.</p>
-          </div>-->
-          <div class="canvas">
-                <a data-toggle="collapse" href="#git-code" class="code-text" id="clone">git clone "url"</a>
-                <p class="explanation collapse" id="git-code">git clone is used to clone an existing remote repository(often shortened as "repo") into your computer</p>
-          </div>
-          <div class="canvas">
-                <a data-toggle="collapse" href="#git-merge" class="code-text">git merge "branch name"</a>
-                <p class="explanation collapse" id="git-merge">Use git merge when you whant to merge a branch into the active branch <br>
-                  <a href="">
-                    <img src="images/Group-1.merge.png" alt="">
-                  </a>
-                </p>
-          </div>	
         </div>
       </div>
-
-    </div>
 
       <div class="work-with-git" id="work-with-git">
-          <div class="heading">
-              <h2>Work with git</h2> 
-             </div>
-             <div class="canvas">
+        <div class="heading">
+          <h2>Work with git</h2>
+        </div>
+        <div class="canvas">
+          <h1 class="margin-top">Get started with git</h1>
+          <p class="margin-top2">
+            if you don't already have git installed you can start by installing
+            it by pressing the orange git-symbol above. When you have Git
+            installed you can open the terminal and check if it's there by using
+            the command:
+          </p>
+          <p class="code-text">"git --version"</p>
 
-                  <h1 class="margin-top"> Get started with git</h1>
-                  <p class="margin-top2">if you don't already have git installed you can start by installing it by pressing the orange git-symbol above. When you have Git installed you can open the terminal and check if it's there by using the command: </p> 
-                  <p class="code-text">"git --version"</p>
+          <p class="margin-top2">
+            The next step is to create a new repository. click on
+            <img class="plus" src="images/plus.png" alt="" /> , followed by
+            clicking on "New repository"
+          </p>
+          <!-- <p class="code-text">"git init"</p> -->
+          <p>
+            Name your repository. For exampel, I have named my repository for
+            this project to "git-project". Then choose if you want to make the
+            repository either public or private.
+          </p>
+          <p>
+            Select Initialize this repository with a README before pressing
+            create repository.
+          </p>
+          <p>and there you have a new git repository.</p>
+          <p class="margin-top">
+            If you whant to download an existing remote repository you want to
+            run the command:
+          </p>
+          <p class="code-text">git clone "Web URL"</p>
+          <img class="web-url" src="images/web-url.png" alt="" />
 
-                  <p class="margin-top2">
-                    The next step is to create a new repository. click on 
-                    <img class="plus" src="images/plus.png" alt=""> , followed by clicking on                "New repository"</p> 
-                    <!-- <p class="code-text">"git init"</p> -->
-                    <p>Name your repository. For exampel, I have named my repository for this project to "git-project". Then choose if you want to make the repository either public or private. </p>
-                    <p>Select Initialize this repository with a README before pressing create repository.</p>
-                    <p>and there you have a new git repository.</p>
-                    <p class="margin-top">If you whant to download an existing remote repository you want to run the command:</p>
-                    <p class="code-text">git clone "Web URL"</p>
-                    <img class="web-url" src="images/web-url.png" alt="">
-          
-                  <h1 class="margin-top"> Add & Commit </h1>
-                  <p class="margin-top2">
-                    You can add your changes to the staging area by using the "git add"-command, more examples of the "git add"-command can be seen above followd by the headline "Commands".
-                  </p>
-                  <p>The picture below shows a more clear picture of the different stages between your working directory and remote repo</p>
-                  <img src="images/GIT2.png" alt="" class="commands-pic">
-          
-                  <h1 class="margin-top">Branches</h1>
-                  <img class="branch-logo" src="images/branch-symbol.png" alt="">
-                  <p class="margin-top2">A good way to keep track on your different features when you're working in git is by using different branches for each feature, it keeps the features isolated from each other. The "default" branch when you create a repository is the master branch. You use the other branches for development and then merge them back to the master branch when the feature is complete. </p>
-                  <p>An advice is to name the branches related to each features. This helps you if you want to go back and make a change later on is that specific feature.</p>
-                  <img src="images/merge-git.png" class="merge-pic" alt="">
-                  
-                    <h1 class="margin-top">Merge</h1>
-                    <p class="margin-top2">In Git, "merge" is when you integrating another branch into your current working branch. You're using your changes and combine them with your current working files. It's easy to merge in git, you just have to use the command:</p> <p class="code-text">git merge "and-the-branch-name"</p> <p>This means that you will merge the branch that you are currently in with the branch inside the quotes. And git will figure out how to integrate new changes successfully... most of the time.</p>
+          <h1 class="margin-top">Add & Commit</h1>
+          <p class="margin-top2">
+            You can add your changes to the staging area by using the "git
+            add"-command, more examples of the "git add"-command can be seen
+            above followd by the headline "Commands".
+          </p>
+          <p>
+            The picture below shows a more clear picture of the different stages
+            between your working directory and remote repo
+          </p>
+          <img src="images/GIT2.png" alt="" class="commands-pic" />
 
-                    <h1 class="margin-top">Conflicts</h1>
-                    <p class="margin-top2">Git is not always perfect and can become a bit complicated if two poeple are working and changing in the same file. Conflicts are most likely to happend when working in team. </p>
-                    <p>A conflict shows when more than one person has made changes in the same branch and made edits on the same line or something has been edited in one branch and deleted in the other.</p>
-                    <p>If this happends, git will mark the file as having a conflict - which you'll have to solve before you can continue.</p>
-                  </div>
+          <h1 class="margin-top">Branches</h1>
+          <img class="branch-logo" src="images/branch-symbol.png" alt="" />
+          <p class="margin-top2">
+            A good way to keep track on your different features when you're
+            working in git is by using different branches for each feature, it
+            keeps the features isolated from each other. The "default" branch
+            when you create a repository is the master branch. You use the other
+            branches for development and then merge them back to the master
+            branch when the feature is complete.
+          </p>
+          <p>
+            An advice is to name the branches related to each features. This
+            helps you if you want to go back and make a change later on is that
+            specific feature.
+          </p>
+          <img src="images/merge-git.png" class="merge-pic" alt="" />
+
+          <h1 class="margin-top">Merge</h1>
+          <p class="margin-top2">
+            In Git, "merge" is when you integrating another branch into your
+            current working branch. You're using your changes and combine them
+            with your current working files. It's easy to merge in git, you just
+            have to use the command:
+          </p>
+          <p class="code-text">git merge "and-the-branch-name"</p>
+          <p>
+            This means that you will merge the branch that you are currently in
+            with the branch inside the quotes. And git will figure out how to
+            integrate new changes successfully... most of the time.
+          </p>
+
+          <h1 class="margin-top">Conflicts</h1>
+          <p class="margin-top2">
+            Git is not always perfect and can become a bit complicated if two
+            poeple are working and changing in the same file. Conflicts are most
+            likely to happend when working in team.
+          </p>
+          <p>
+            A conflict shows when more than one person has made changes in the
+            same branch and made edits on the same line or something has been
+            edited in one branch and deleted in the other.
+          </p>
+          <p>
+            If this happends, git will mark the file as having a conflict -
+            which you'll have to solve before you can continue. It can look
+            something like this:
+          </p>
+          <img class="conflict" src="images/conflict-pic.png" alt="" />
+          <p class="margin-top2">
+            This will leave you with the option to choose between: <br />
+            <br />
+            "Accept Current Change". <br />
+            "Accept Incoming Change" <br />
+            "Accept Both Changes" <br />
+            "Compare Changes"
+          </p>
+          <p>Keep calm and carry on.</p>
+        </div>
       </div>
-
     </div>
     <script src="searchbar.js"></script>
     <script
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"
-      ></script>
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
